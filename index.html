@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>&ltdindinControl/&gt</title>
+</head>
+<body>
+   <main>
+      <h2 class="title">&ltdindinControl/&gt</h2>
+      <form class="input-section">
+         <div class="input-value">
+            <span class="currency-symbol">R$</span>
+            <input type="number" placeholder="valor" id="input-value" />
+         </div>
+         <select id="item-type-input">
+            <option value="despesa">Despesa</option>
+            <option value="receita">Receita</option>
+         </select>
+         <input
+            type="text"
+            placeholder="descrição"
+            id="input-description"
+            autocomplete="off"
+         />
+         <button type="submit" id="add-item-btn">Adicionar</button>
+      </form>
+      <h2 class="list-title">Despesa</h2>
+      <div class="despesa-list"></div>
+      <h2 class="list-title">Receita</h2>
+      <div class="receita-list"></div>
+      <h3 class="total">
+         Total Receita <span id="total-receita">R$ 3080</span>
+      </h3>
+      <h3 class="total">
+         Total Despesa <span id="total-despesa">R$ 3080</span>
+      </h3>
+      <h3 class="total">Restante <span id="restante">R$ 3080</span></h3>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+</html>
